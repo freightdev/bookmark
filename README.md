@@ -5,6 +5,19 @@
 
 ---
 
+## ✨ What is Bookmark?
+
+**Bookmark** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
+
+It is:
+
+* MIT Licensed, like Storybook, Tailwind, and the best open tools
+* Designed to work with `.mark`, `.marker`, `.bookmark`, `.mstp`, and `.trail` formats
+* UI-agnostic — works in terminal, GUI, markdown viewers, or AR
+* Not a book simulator, but a developer storytelling structure — like Storybook, but for logic and memory
+
+---
+
 ## 🚧 Still in Development • ☕️ Support the Build
 
 This project is **actively being built**, refined, and soon to be stress-tested in the real world.
@@ -30,19 +43,6 @@ If this repo helps you, consider buying me a coffee:
 [![Buy Me a Coffee](https://img.shields.io/badge/support-buy%20me%20a%20coffee-yellow?logo=buymeacoffee\&style=flat-square)](https://coff.ee/freightdev)
 
 Every dollar funds tools for the ones still behind the wheel.
-
----
-
-## ✨ What is Bookmark?
-
-**Bookmark** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
-
-It is:
-
-* MIT Licensed, like Storybook, Tailwind, and the best open tools
-* Designed to work with `.mark`, `.marker`, `.bookmark`, `.mstp`, and `.trail` formats
-* UI-agnostic — works in terminal, GUI, markdown viewers, or AR
-* Not a book simulator, but a developer storytelling structure — like Storybook, but for logic and memory
 
 ---
 
