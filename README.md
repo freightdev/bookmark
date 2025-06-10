@@ -1,6 +1,6 @@
 # 📖 Bookmark — A Standard for Structuring Memory
 
-> *"The system will write the tale — to help you tell your story."*
+> *"The system will write a book — to help you tell your tale."*
 > MIT Licensed, human-first memory structure for agents, tools, and people.
 
 ---
@@ -21,26 +21,23 @@ It is:
 
 ## 📘 Core Concepts
 
-| Concept   | Folder   | Description                                           |
-| --------- | -------- | ----------------------------------------------------- |
-| **Shelf** | `shelf/` | Mounting Point for any book                           |
-| **Book**  | `book/`  | User-level memory, not system editable by default     |
+| Concept   | Folder   | Description                                       |
+| --------- | -------- | ------------------------------------------------- |
+| **Shelf** | `shelf/` | Mounting Point for any book                       |
+| **Book**  | `book/`  | User-level memory, not system editable by default |
 
+| Concept  | File    | Description                                         |
+| -------- | ------- | --------------------------------------------------- |
+| **MSTP** | `.mstp` | MARK Story Telling Protocol — a system-level format |
 
-| Concept      | File                     | Description                                           |
-| ------------ | ------------------------ | ----------------------------------------------------- |
-| **MSTP**     | `.mstp`                  | MARK Story Telling Protocol — a system-level format   |
-
-
-| Concept      | File/Folder              | Description                                           |
-| ------------ | ------------------------ | ----------------------------------------------------- |
-| **Bookmark** | `.bookmark`, `bookmarks/`| A jump point to a specific stopping point              |
-| **Page**     | `.page`, `pages/`        | A single view, moment, or memory state                |
-| **Mark**     | `.mark`, `marks/`        | A marked memory in your story or tale                 |
-| **Marker**   | `.marker`, `markers/`    | Atomic logic unit or logic pattern                    |
-| **Ribbon**   | `.ribbon`, `ribbons/`    | A start of a memory path                              |
-| **Trail**    | `.trail`, `trails/`      | A recorded path through memory — aka system log       |
-
+| Concept      | File/Folder               | Description                                     |
+| ------------ | ------------------------- | ----------------------------------------------- |
+| **Bookmark** | `.bookmark`, `bookmarks/` | A jump point to a specific stopping point       |
+| **Page**     | `.page`, `pages/`         | A single view, moment, or memory state          |
+| **Mark**     | `.mark`, `marks/`         | A marked memory in your story or tale           |
+| **Marker**   | `.marker`, `markers/`     | Atomic logic unit or logic pattern              |
+| **Ribbon**   | `.ribbon`, `ribbons/`     | A start of a memory path                        |
+| **Trail**    | `.trail`, `trails/`       | A recorded path through memory — aka system log |
 
 ---
 
@@ -63,7 +60,6 @@ It is:
     ├──  markers/
     │   ├── packet-scanner.marker
     └── book.mstp
-
 ```
 
 ---
@@ -76,7 +72,7 @@ Traditional file systems simulate **filing cabinets**.
 * Pages tell you what mattered.
 * Bookmarks guide you back.
 * Ribbons remember where you started.
-* Trails shows you how you got here.
+* Trails show you how you got here.
 * MSTP tells the story of the book.
 
 ---
@@ -91,7 +87,14 @@ It routes memory like a story engine, indexing Pages, binding Markers, and stitc
 ## 🛠 Usage
 
 ```
+# Open a bookmark into a page
+mark open packet-pilot.bookmark
 
+# Follow a recorded ribbon
+marktrail follow startup.ribbon
+
+# Export MSTP trail to plain markdown
+marktrail export book.mstp --to markdown
 ```
 
 ---
