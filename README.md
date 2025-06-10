@@ -15,44 +15,56 @@ It is:
 * MIT Licensed, like Storybook, Tailwind, and the best open tools
 * Designed for people, tools, and AI agents
 * UI-agnostic — works in terminal, GUI, markdown viewers, or AR
-* Built on plain files: `.bookmark`,`.mark`, `.marker`, `.book`, `.page`, `.tale`, `.story`, `.trail`, `.ribbon`
+* Built on plain files: `.bookmark`,`.mark`, `.marker`, `.book`, `.page`, `.mstp`, `.trail`, `.ribbon`
 
 ---
 
 ## 📘 Core Concepts
 
-| Concept   | Folder   | Description                                       |
-| --------- | -------- | ------------------------------------------------- |
-| **Shelf** | `shelf/` | Mounting Point for stories and tales              |
-| **Story** | `story/` | User-level memory, not system editable by default |
+| Concept   | Folder   | Description                                           |
+| --------- | -------- | ----------------------------------------------------- |
+| **Shelf** | `shelf/` | Mounting Point for any book                           |
+| **Book**  | `book/`  | User-level memory, not system editable by default     |
 
-| Concept      | File/Folder              | Description                                         |
-| ------------ | ------------------------ | --------------------------------------------------- |
-| **Page**     | `.page`, `pages/`        | A single view, moment, or memory state              |
-| **Bookmark** | `.bookmark`, `.bookmark/`| A jump point to a specific page                     |
-| **Mark**     | `.mark`, `marks/`        | A marked memory in your story or tale               |
-| **Marker**   | `.marker`, `markers/`    | Atomic logic unit or logic pattern                  |
-| **Ribbon**   | `.ribbon`, `ribbons/`    | A start of a memory path                            |
-| **Trail**    | `.trail`, `trails/`      | A recorded path through memory — aka system log     |
-| **MSTP**     | `.trail`, `trails/`      | Memory Story Trail Protocol — a system-level format |
+
+| Concept      | File                     | Description                                           |
+| ------------ | ------------------------ | ----------------------------------------------------- |
+| **MSTP**     | `.mstp`                  | MARK Story Telling Protocol — a system-level format   |
+
+
+| Concept      | File/Folder              | Description                                           |
+| ------------ | ------------------------ | ----------------------------------------------------- |
+| **Bookmark** | `.bookmark`, `bookmarks/`| A jump point to a specific stopping point              |
+| **Page**     | `.page`, `pages/`        | A single view, moment, or memory state                |
+| **Mark**     | `.mark`, `marks/`        | A marked memory in your story or tale                 |
+| **Marker**   | `.marker`, `markers/`    | Atomic logic unit or logic pattern                    |
+| **Ribbon**   | `.ribbon`, `ribbons/`    | A start of a memory path                              |
+| **Trail**    | `.trail`, `trails/`      | A recorded path through memory — aka system log       |
+
 
 ---
 
 ## 📂 File Hierarchy Example
 
 ```
-.bookmark/
-├── story/
+.mark/
+├── books/
+|   ├── trails/
+│   │   ├── packet-pilot.trail
+|   ├── ribbons/
+│   │   ├── packet-pilot.ribbon
 │   ├── pages/
 │   │   ├── packet-process.page
 │   │   ├── bugfix-notes.page
+|   ├── bookmarks/
+│   │   ├── packet-pilot.bookmark
 │   ├── marks/
 │   │   └── packet-pilot.mark
-│   └── markers/
-│       ├── packet-scanner.marker
-├── mark.trail
-├── startup.ribbon
-└── packet-pilot.mstp
+│   └──  markers/
+|       ├── packet-scanner.marker
+└── book.mstp
+
+
 ```
 
 ---
@@ -66,6 +78,7 @@ Traditional file systems simulate **filing cabinets**.
 * Bookmarks guide you back.
 * Ribbons tell you what mattered.
 * MARKTrail shows you how you got here.
+* MSTP tells a story of the bookmarks
 
 ---
 
@@ -79,9 +92,7 @@ It routes memory like a story engine, indexing Pages, binding Markers, and stitc
 ## 🛠 Usage
 
 ```
-mark open my.bookmark
-marktrail follow ./ribbons/startup.ribbon
-bookmark render --to html
+
 ```
 
 ---
