@@ -15,41 +15,44 @@ It is:
 * MIT Licensed, like Storybook, Tailwind, and the best open tools
 * Designed for people, tools, and AI agents
 * UI-agnostic — works in terminal, GUI, markdown viewers, or AR
-* Built on plain files: `.mark`, `.bookmark`, `.book`, `.trail`, `.page`, `.tale`, `.story`
+* Built on plain files: `.bookmark`,`.mark`, `.marker`, `.book`, `.page`, `.tale`, `.story`, `.trail`, `.ribbon`
 
 ---
 
 ## 📘 Core Concepts
 
-| Concept       | File/Folder                 | Description                                          |
-| ------------- | --------------------------- | ---------------------------------------------------- |
-| **Book**      | `.book`, `~book/`           | A collection of memory, story, or flow               |
-| **Page**      | `.page`, `~page/`           | A single view, moment, or memory state               |
-| **Bookmark**  | `.bookmark`                 | A jump point to a Page, Ribbon, or Trail             |
-| **Mark**      | `.mark`, `~mark/`           | A named memory — can be left by others               |
-| **Marker**    | `.marker/`                  | Atomic logic unit or logic pattern                   |
-| **Ribbon**    | `.ribbon`                   | A personal journey — the start of a memory path      |
-| **MARKTrail** | `.trail`, `marktrail.trail` | A recorded path through memory — story as system log |
-| **Tale**      | `.tale/`                    | System-level memory, not user editable               |
-| **Shelf**     | `~shelf/`                   | Book storage — active, archived, or synced           |
+| Concept   | Folder   | Description                                       |
+| --------- | -------- | ------------------------------------------------- |
+| **Shelf** | `shelf/` | Mounting Point for stories and tales              |
+| **Story** | `story/` | User-level memory, not system editable by default |
+
+| Concept      | File/Folder              | Description                                         |
+| ------------ | ------------------------ | --------------------------------------------------- |
+| **Page**     | `.page`, `pages/`        | A single view, moment, or memory state              |
+| **Bookmark** | `.bookmark`, `.bookmark/`| A jump point to a specific page                     |
+| **Mark**     | `.mark`, `marks/`        | A marked memory in your story or tale               |
+| **Marker**   | `.marker`, `markers/`    | Atomic logic unit or logic pattern                  |
+| **Ribbon**   | `.ribbon`, `ribbons/`    | A start of a memory path                            |
+| **Trail**    | `.trail`, `trails/`      | A recorded path through memory — aka system log     |
+| **MSTP**     | `.trail`, `trails/`      | Memory Story Trail Protocol — a system-level format |
 
 ---
 
 ## 📂 File Hierarchy Example
 
 ```
-~shelf/
-├── packetpilot.book
-│   ├── page/
-│   │   ├── dispatch-log.page
+.bookmark/
+├── story/
+│   ├── pages/
+│   │   ├── packet-process.page
 │   │   ├── bugfix-notes.page
-│   ├── mark/
-│   │   └── login-failure.mark
-│   └── marker/
-│       └── auth-check.marker
-├── marktrail.trail
+│   ├── marks/
+│   │   └── packet-pilot.mark
+│   └── markers/
+│       ├── packet-scanner.marker
+├── mark.trail
 ├── startup.ribbon
-└── main.bookmark
+└── packet-pilot.mstp
 ```
 
 ---
