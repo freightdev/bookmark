@@ -99,7 +99,7 @@ bookmark open packet-pilot.bookmark
 bookmark view packet-pilot.mark
 
 # Render a trail
-marktrail render packet-pilot.trail
+marktrail render mark.trail
 ```
 
 ---
@@ -125,6 +125,6 @@ Use it. Fork it. Tell your story.
 
 Originally envisioned by **Jesse Conley**
 Built to help truckers, builders, and humans remember who they are
-Structured by the MARK OS protocol and Storybook-style logic flow
+Structured by the BookOS protocol and Storybook-style logic flow
 
 > “Show me someone’s Book, and I’ll tell you who they are.”
