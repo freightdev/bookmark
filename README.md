@@ -47,23 +47,22 @@ It is:
 ## 📂 File Hierarchy Example
 
 ```
-.mark/
-├── books/
-|   ├── trails/
-│   │   ├── packet-pilot.trail
-|   ├── ribbons/
-│   │   ├── packet-pilot.ribbon
-│   ├── pages/
-│   │   ├── packet-process.page
-│   │   ├── bugfix-notes.page
-|   ├── bookmarks/
-│   │   ├── packet-pilot.bookmark
-│   ├── marks/
-│   │   └── packet-pilot.mark
-│   └──  markers/
-|       ├── packet-scanner.marker
-└── book.mstp
-
+~shelf/
+└── book/
+    ├── trails/
+    │   ├── packet-pilot.trail
+    ├── ribbons/
+    │   ├── packet-pilot.ribbon
+    ├── pages/
+    │   ├── packet-process.page
+    │   ├── bugfix-notes.page
+    ├── bookmarks/
+    │   ├── packet-pilot.bookmark
+    ├── marks/
+    │   └── packet-pilot.mark
+    ├──  markers/
+    │   ├── packet-scanner.marker
+    └── book.mstp
 
 ```
 
@@ -74,11 +73,11 @@ It is:
 Traditional file systems simulate **filing cabinets**.
 **Bookmark** simulates **living memory**.
 
-* Pages remember where you were.
+* Pages tell you what mattered.
 * Bookmarks guide you back.
-* Ribbons tell you what mattered.
-* MARKTrail shows you how you got here.
-* MSTP tells a story of the bookmarks
+* Ribbons remember where you started.
+* Trails shows you how you got here.
+* MSTP tells the story of the book.
 
 ---
 
