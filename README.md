@@ -25,16 +25,16 @@ It is:
 | **Shelf** | `shelf/` | Mounting Point for any memory group or set |
 | **Book**  | `book/`  | Collection of marks, pages, and trails     |
 
-| Concept  | File    | Description                                             |
-| -------- | ------- | ------------------------------------------------------- |
-| **MSTP** | `.mstp` | MARK Story Telling Protocol — system-generated logic    |
-| **Trail**| `.trail`| System-tracked path between connected marks and markers |
+| Concept   | File     | Description                                             |
+| --------- | -------- | ------------------------------------------------------- |
+| **MSTP**  | `.mstp`  | MARK Story Telling Protocol — system-generated logic    |
+| **Trail** | `.trail` | System-tracked path between connected marks and markers |
 
 | Concept      | File/Folder               | Description                                   |
 | ------------ | ------------------------- | --------------------------------------------- |
 | **Bookmark** | `.bookmark`, `bookmarks/` | Jump point to a mark, marker, or page state   |
 | **Page**     | `.page`, `pages/`         | A single context snapshot                     |
-| **Mark**     | `.mark`, `marks/`         | Identity or memory tied to a function or flow  |
+| **Mark**     | `.mark`, `marks/`         | Identity or memory tied to a function or flow |
 | **Marker**   | `.marker`, `markers/`     | Tool, helper, or reusable logic chunk         |
 | **Ribbon**   | `.ribbon`, `ribbons/`     | Starting point of a memory trail              |
 
@@ -125,6 +125,6 @@ Use it. Fork it. Tell your story.
 
 Originally envisioned by **Jesse Conley**
 Built to help truckers, builders, and humans remember who they are
-Structured by the BookOS protocol and Storybook-style logic flow
+Structured by the MARK OS protocol and Storybook-style logic flow
 
 > “Show me someone’s Book, and I’ll tell you who they are.”
