@@ -15,7 +15,7 @@ It is:
 * MIT Licensed, like Storybook, Tailwind, and the best open tools
 * Designed for people, tools, and AI agents
 * UI-agnostic — works in terminal, GUI, markdown viewers, or AR
-* Built on plain files: `.mark`, `.bookmark`, `.book`, `.trail`, `.page`, `.tale`
+* Built on plain files: `.mark`, `.bookmark`, `.book`, `.trail`, `.page`, `.tale`, `.story`
 
 ---
 
