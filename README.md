@@ -1,6 +1,6 @@
 # 📖 Bookmark — A Standard for Structuring Memory
 
-> *"The system will write a book — to help you tell your tale."*
+> *"The system will write a bookmark — to help you connect your marks and markers."*
 > MIT Licensed, human-first memory structure for agents, tools, and people.
 
 ---
