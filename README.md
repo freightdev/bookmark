@@ -7,37 +7,36 @@
 
 ## ✨ What is Bookmark?
 
-**Bookmark** is a memory-first, Markdown-native standard for organizing thought, action, and intent.
-It reimagines the traditional file system as a living, breathing **book** — made of **pages**, **marks**, **ribbons**, and **trails** — where every action becomes part of your evolving story.
+**Bookmark** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
 
 It is:
 
 * MIT Licensed, like Storybook, Tailwind, and the best open tools
-* Designed for people, tools, and AI agents
+* Designed to work with `.mark`, `.marker`, `.bookmark`, `.mstp`, and `.trail` formats
 * UI-agnostic — works in terminal, GUI, markdown viewers, or AR
-* Built on plain files: `.bookmark`,`.mark`, `.marker`, `.book`, `.page`, `.mstp`, `.trail`, `.ribbon`
+* Not a book simulator, but a developer storytelling structure — like Storybook, but for logic and memory
 
 ---
 
 ## 📘 Core Concepts
 
-| Concept   | Folder   | Description                                       |
-| --------- | -------- | ------------------------------------------------- |
-| **Shelf** | `shelf/` | Mounting Point for any book                       |
-| **Book**  | `book/`  | User-level memory, not system editable by default |
+| Concept   | Folder   | Description                                |
+| --------- | -------- | ------------------------------------------ |
+| **Shelf** | `shelf/` | Mounting Point for any memory group or set |
+| **Book**  | `book/`  | Collection of marks, pages, and trails     |
 
-| Concept  | File    | Description                                         |
-| -------- | ------- | --------------------------------------------------- |
-| **MSTP** | `.mstp` | MARK Story Telling Protocol — a system-level format |
+| Concept  | File    | Description                                             |
+| -------- | ------- | ------------------------------------------------------- |
+| **MSTP** | `.mstp` | MARK Story Telling Protocol — system-generated logic    |
+| **Trail**| `.trail`| System-tracked path between connected marks and markers |
 
-| Concept      | File/Folder               | Description                                     |
-| ------------ | ------------------------- | ----------------------------------------------- |
-| **Bookmark** | `.bookmark`, `bookmarks/` | A jump point to a specific stopping point       |
-| **Page**     | `.page`, `pages/`         | A single view, moment, or memory state          |
-| **Mark**     | `.mark`, `marks/`         | A marked memory in your story or tale           |
-| **Marker**   | `.marker`, `markers/`     | Atomic logic unit or logic pattern              |
-| **Ribbon**   | `.ribbon`, `ribbons/`     | A start of a memory path                        |
-| **Trail**    | `.trail`, `trails/`       | A recorded path through memory — aka system log |
+| Concept      | File/Folder               | Description                                   |
+| ------------ | ------------------------- | --------------------------------------------- |
+| **Bookmark** | `.bookmark`, `bookmarks/` | Jump point to a mark, marker, or page state   |
+| **Page**     | `.page`, `pages/`         | A single context snapshot                     |
+| **Mark**     | `.mark`, `marks/`         | Identity or memory tied to a function or flow  |
+| **Marker**   | `.marker`, `markers/`     | Tool, helper, or reusable logic chunk         |
+| **Ribbon**   | `.ribbon`, `ribbons/`     | Starting point of a memory trail              |
 
 ---
 
@@ -46,8 +45,6 @@ It is:
 ```
 ~shelf/
 └── book/
-    ├── trails/
-    │   ├── packet-pilot.trail
     ├── ribbons/
     │   ├── packet-pilot.ribbon
     ├── pages/
@@ -57,54 +54,62 @@ It is:
     │   ├── packet-pilot.bookmark
     ├── marks/
     │   └── packet-pilot.mark
-    ├──  markers/
+    ├── markers/
     │   ├── packet-scanner.marker
-    └── book.mstp
+    ├── book.mstp
+    └── mark.trail
 ```
 
 ---
 
 ## 🧠 Why Bookmark?
 
-Traditional file systems simulate **filing cabinets**.
-**Bookmark** simulates **living memory**.
+This is not a `.mark` or `.marker` generator — that’s what **MARKeteer Studio** does.
 
-* Pages tell you what mattered.
-* Bookmarks guide you back.
-* Ribbons remember where you started.
-* Trails show you how you got here.
-* MSTP tells the story of the book.
+Instead, Bookmark is:
+
+* A Storybook-style interface for linking your `.mark` and `.marker` logic
+* A runtime interface for building and following **bookmark flows**
+* A shared environment where bookmarks trigger agent actions or self-navigation
+* A context-driven tool where adding a `.bookmark` to any `.mark`, `.marker`, `.page`, or `.trail` wires it into the system automatically
+
+All you have to do is:
+
+* Write `packet-pilot.mark.ts` alongside `packet-pilot.ts`
+* Write `packet-scanner.marker.py` alongside `packet-scanner.py`
+* Add `packet-pilot.bookmark` — and Bookmark will render it into your live trail
+
+The system connects your marks and markers together, creates a visual Bookmark interface, and dynamically builds trails and MSTP records as you go.
 
 ---
 
 ## 🔁 MARK Kernel
 
-**MARK** stands for **Memory Aware Reference Kernel**.
-It routes memory like a story engine, indexing Pages, binding Markers, and stitching your Trails.
+**MARK** stands for **Memory Aware Reference Kernel**. It routes memory like a story engine, indexing Pages, binding Markers, and stitching your Trails.
 
 ---
 
 ## 🛠 Usage
 
 ```
-# Open a bookmark into a page
-mark open packet-pilot.bookmark
+# Open a bookmark interface like Storybook
+bookmark open packet-pilot.bookmark
 
-# Follow a recorded ribbon
-marktrail follow startup.ribbon
+# View linked marks and markers
+bookmark view packet-pilot.mark
 
-# Export MSTP trail to plain markdown
-marktrail export book.mstp --to markdown
+# Render a trail
+marktrail render packet-pilot.trail
 ```
 
 ---
 
 ## 📖 Example Use Cases
 
-* Build UI agents using `.mark` files
-* Create personal knowledge bases with `.book`
-* Teach AI systems with `.trail`-based replay logs
-* Document mental health, artistic journeys, software debugging, and dispatch operations
+* Link `.mark` and `.marker` files to build agent behaviors
+* Add `.bookmark` files to connect workflows and trails
+* Watch your MSTP trail grow automatically as you work
+* Run in dev, test, or production to see memory-based linking and flow in action
 
 ---
 
@@ -120,6 +125,6 @@ Use it. Fork it. Tell your story.
 
 Originally envisioned by **Jesse Conley**
 Built to help truckers, builders, and humans remember who they are
-Structured by the MARK OS protocol and BookOS design
+Structured by the MARK OS protocol and Storybook-style logic flow
 
 > “Show me someone’s Book, and I’ll tell you who they are.”
