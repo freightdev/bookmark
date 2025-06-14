@@ -101,7 +101,7 @@ All you have to do is:
 * Write `packet-process.ribbon.py` alongside `packet-process.py`
 * Add `fed.book` — and Bookshelf will render it into your own custom `mark.trail`
 
-Note: **Trails** can be added to any `.marker` inside the `.bookshelf/` to mark what its behavivor and decisions
+Note: **Trails** can be added to any `.marker` inside the `.bookshelf/` to trail each markers use.
 
 The system connects your books and pages together, creates a visual Bookshelf interface, and dynamically builds marks, markers, trails, books, pages, ribbons, and MSTP records as you go.
 
@@ -113,14 +113,8 @@ The system connects your books and pages together, creates a visual Bookshelf in
 # Open a books interface like Storybook
 bookshelf open <*.book>
 
-# View linked marks and markers
-bookshelf view <*.{mark,marker}>
-
-# Render a trail
-bookshelf render <*.trail>
-
-# Create ribbon
-bookshelf create <*.ribbon>
+# Open a bookcase interface like Storybook
+bookshelf open bookcase
 ```
 
 ---
@@ -128,7 +122,7 @@ bookshelf create <*.ribbon>
 ## 📖 Example Use Cases
 
 * Link `.mark` and `.marker` files to build agent behaviors
-* Add `.bookmark` files to connect workflows and trails
+* Add `.book` files to connect workflows and trails
 * Watch your MSTP trail grow automatically as you work
 * Run in dev, test, or production to see memory-based linking and flow in action
 
