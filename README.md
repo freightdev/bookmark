@@ -121,8 +121,8 @@ bookshelf open bookcase
 
 ## 📖 Example Use Cases
 
-* Link `.mark` and `.marker` files to build agent behaviors
-* Add `.book` files to connect workflows and trails
+* Link `.mark` together to create `.marker` files
+* Add `.ribbon` and `.trail` files to connect workflows and trail
 * Watch your MSTP trail grow automatically as you work
 * Run in dev, test, or production to see memory-based linking and flow in action
 
