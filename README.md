@@ -1,20 +1,20 @@
-# 📖 Marker Ink — A Standard for Structuring Memory
+# 📖 Bookshelf — A Standard for Structuring Memory
 
 > MIT Licensed, human-first memory structure for agents, tools, and people.
 
 ---
 
-## ✨ What is Bookcase?
+## ✨ What is Bookshelf?
 
 
-> *"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails***
+> *"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails** to create custom **Marker Agents**.
 
-**Marker Ink** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **books**, **pages**, **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
+**Bookshelf** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **books**, **pages**, **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
 
 It is:
 
 * MIT Licensed, like Storybook, Tailwind, and the best open tools
-* Designed to work with `.mark`, `.marker`, `.bookmark`, `.mstp`, and `.trail` formats
+* Designed to work with `.book`, `.mark`, `.marker`, `.ribbon`, `.trail`, and `.mstp` formats
 * UI-agnostic — works in terminal, GUI, markdown viewers, or AR
 * Not a book simulator, but a developer storytelling structure — like Storybook, but for logic and memory
 
@@ -23,17 +23,18 @@ It is:
 ## 📘 Core Concepts
 
 
-| Concept      | File         | Description                                             |
-| ------------ | ------------ | ------------------------------------------------------- |
-| **Bookcase** | `.bookcase/` | A collection of books                                   |
+| Concept       | Folder        | Description                                             |
+| ------------- | ------------- | ------------------------------------------------------- |
+| **Bookshelf** | `.bookshelf/` | A collection of unstructured books                      |
+| **Case**      | `bookcase/`   | A collection of ready to use books                      |
 
 | Concept   | File     | Description                                             |
 | --------- | -------- | ------------------------------------------------------- |
 | **MSTP**  | `.mstp`  | Markdown Storytelling Protocol — system-generated logic |
+| **Book**  | `.book`  | A single point of truth and knowledge                   |
 
 | Concept      | File/Folder               | Description                                             |
 | ------------ | ------------------------- | ------------------------------------------------------- |
-| **Book**     | `.book`, `books/`         | A single point of truth and knowledge                   |
 | **Page**     | `.page`, `pages/`         | A single context snapshot                               |
 | **Mark**     | `.marker`, `markers/`     | Jump point to a reusable logic chunk                    |
 | **Marker**   | `.mark`, `marks/`         | Identity or memory tied to a function or flow            |
@@ -45,8 +46,8 @@ It is:
 ## 📂 File Hierarchy Example
 
 ```
-.bookcase/
-├── books/
+.bookshelf/
+├── bookcase/
 │   ├── me.book
 │   ├── fed.book
 │   ├── elda.book
@@ -76,29 +77,35 @@ It is:
 │   ├── packet-pilot.trail
 │   ├── cargo-connect.trail
 │   └── whisper-witness.trail
+├── book.mark
+├── mark.trail
 └── mark.mstp
 ```
 
 ---
 
-## 🧠 Why Bookmark?
+## 🧠 Why Bookshelf?
 
 This is not a `.mark` or `.marker` generator — that’s what **MARK CLI** does.
 
-Instead, Bookmark is:
+Instead, Bookshelf is:
 
-* A Storybook-style interface for linking your `.mark` and `.marker` logic
-* A runtime interface for building and following **bookmark flows**
-* A shared environment where bookmarks trigger agent actions or self-navigation
-* A context-driven tool where adding a `.bookmark` to any `.page` wires it into the system automatically
+* A Storybook-style interface for linking your **marks** to your **markers** logic
+* A runtime interface for building and following **marker flows**
+* A shared environment where markers trigger agent actions or self-navigation
+* A context-driven tool where adding a `.book`, `.page`, `.mark`, `.marker`,`.ribbon`, or `.trail` wires it into the system automatically
 
 All you have to do is:
 
-* Write `packet-pilot.mark.ts` alongside `packet-pilot.ts`
-* Write `packet-scanner.marker.py` alongside `packet-scanner.py`
-* Add `packet-pilot.bookmark` — and Bookmark will render it into your live trail
+* Write `packet-scanner.mark.ts` alongside `packet-packet.ts`
+* Write `packet-pilot.marker.py` alongside `packet-pilot.py`
+* Write `packetView.page.tsx` alongside `packetView.tsx`
+* Write `packet-process.ribbon.py` alongside `packet-process.py`
+* Add `fed.book` — and Bookshelf will render it into your own custom `mark.trail`
 
-The system connects your marks and markers together, creates a visual Bookmark interface, and dynamically builds trails and MSTP records as you go.
+Note: **Trails** can be added to any `.marker` inside the `.bookshelf/` to mark what its behavivor and decisions 
+
+The system connects your books and pages together, creates a visual Bookshelf interface, and dynamically builds marks, markers, trails, books, pages, ribbons, and MSTP records as you go.
 
 ---
 
@@ -108,17 +115,37 @@ The system connects your marks and markers together, creates a visual Bookmark i
 
 ---
 
+## 🚧 Still in Development
+
+This project is **actively being built**, refined, and soon to be stress-tested in the real world.
+
+* Features may change as I break, test, and rebuild everything from the ground up
+* Some logic is experimental or placeholder until it's solid enough for real deployment
+* Nothing gets released until it’s strong enough to be trusted by the people it’s built for
+
+If you’re reading this, you’re early.
+If you’re using this, you’re part of the build.
+
+> *“I won’t ship anything I wouldn’t use on the road myself.”* — Jesse
+
+![status](https://img.shields.io/badge/status-in%20development-orange?style=flat-square)
+
+---
+
 ## 🛠 Usage
 
 ```
-# Open a bookmark interface like Storybook
-bookmark open packet-pilot.bookmark
+# Open a books interface like Storybook
+bookshelf open <*.book>
 
 # View linked marks and markers
-bookmark view packet-pilot.mark
+bookshelf view <*.{mark,marker}>
 
 # Render a trail
-marktrail render mark.trail
+bookshelf render <*.trail>
+
+# Create ribbon
+bookshelf create <*.ribbon>
 ```
 
 ---
