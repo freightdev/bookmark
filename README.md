@@ -109,29 +109,6 @@ The system connects your books and pages together, creates a visual Bookshelf in
 
 ---
 
-## 🔁 MARK Kernel
-
-**MARK** stands for **Memory Aware Reference Kernel**. It routes memory like a story engine, indexing Pages, binding Markers, and stitching your Trails.
-
----
-
-## 🚧 Still in Development
-
-This project is **actively being built**, refined, and soon to be stress-tested in the real world.
-
-* Features may change as I break, test, and rebuild everything from the ground up
-* Some logic is experimental or placeholder until it's solid enough for real deployment
-* Nothing gets released until it’s strong enough to be trusted by the people it’s built for
-
-If you’re reading this, you’re early.
-If you’re using this, you’re part of the build.
-
-> *“I won’t ship anything I wouldn’t use on the road myself.”* — Jesse
-
-![status](https://img.shields.io/badge/status-in%20development-orange?style=flat-square)
-
----
-
 ## 🛠 Usage
 
 ```
@@ -174,3 +151,24 @@ Built to help truckers, builders, and humans remember who they are
 Structured by the MARK OS protocol and Storybook-style logic flow
 
 > “Show me someone’s Book, and I’ll tell you who they are.”
+
+---
+
+## ✍️ Author
+
+**Jesse Edward Eugene Wayne Conley**
+  - 📬 [jesse.freightdev@gmail.com](mailto:jesse.freightdev@gmail.com)
+  - 🔗 [github.com/freightdev](https://github.com/freightdev)
+
+> "I didn’t build this to automate the road. I built it so no one gets left behind."
+
+---
+
+## 💛 Support
+
+If this project helps you or inspires your agent builds:
+[Buy Me a Coffee](https://coff.ee/freightdev)
+
+Every dollar goes toward tools for the ones still behind the wheel.
+
+️ Jesse — [freightdev](https://github.com/freightdev)
