@@ -56,53 +56,58 @@ If you’re using this, you’re part of the build.
 ## 📂 File Hierarchy Example
 
 ```
-~shelf/
-└── case/
-    ├── books/
-    │   ├── fed.book
-    │   └── elda.book
-    ├── ribbons/
-    │   ├── packet-process.ribbon
-    │   ├── cargo-setup.ribbon
-    │   └── whisper-call.ribbon
-    ├── pages/
-    │   ├── process-checker.page
-    │   ├── bugfix-notes.page
-    │   └── whisper-notes.page
-    ├── bookmarks/
-    │   ├── packet-scanner.bookmark
-    │   ├── packet-complete.bookmark
-    │   ├── cargo-collect.bookmark
-    │   └── whisper-collect.bookmark
-    ├── marks/
-    │   ├── scan.mark
-    │   ├── sign.mark
-    │   ├── check.mark
-    │   ├── whisper.mark
-    │   └── process.mark
-    ├── markers/
-    │   ├── packet-pilot.marker
-    │   ├── cargo-connect.marker
-    │   └── whisper-witness.mark
-    ├── trails/
-    │   ├── packet-pilot.trail
-    │   ├── cargo-connect.trail
-    │   └── whisper-witness.trail
-    └── mark.mstp
+.book/
+├── books/
+│   ├── me.book
+│   ├── fed.book
+│   ├── elda.book
+│   ├── hwy.book
+│   ├── eco.book
+│   └── openhwy.book
+├── marks/
+│   ├── scan.mark
+│   ├── sign.mark
+│   ├── check.mark
+│   ├── whisper.mark
+│   └── process.mark
+├── pages/
+│   ├── process-checker.page
+│   ├── bugfix-notes.page
+│   └── whisper-notes.page
+├── bookmarks/
+│   ├── packet-scanner.bookmark
+│   ├── packet-complete.bookmark
+│   ├── cargo-collect.bookmark
+│   └── whisper-collect.bookmark
+├── ribbons/
+│   ├── packet-process.ribbon
+│   ├── cargo-setup.ribbon
+│   └── whisper-call.ribbon
+├── markers/
+│   ├── me.marker
+│   ├── packet-pilot.marker
+│   ├── cargo-connect.marker
+│   └── whisper-witness.mark
+├── trails/
+│   ├── packet-pilot.trail
+│   ├── cargo-connect.trail
+│   └── whisper-witness.trail
+├── book.mark
+└── mark.mstp
 ```
 
 ---
 
 ## 🧠 Why Bookmark?
 
-This is not a `.mark` or `.marker` generator — that’s what **MARKeteer Studio** does.
+This is not a `.mark` or `.marker` generator — that’s what **MARK CLI** does.
 
 Instead, Bookmark is:
 
 * A Storybook-style interface for linking your `.mark` and `.marker` logic
 * A runtime interface for building and following **bookmark flows**
 * A shared environment where bookmarks trigger agent actions or self-navigation
-* A context-driven tool where adding a `.bookmark` to any `.mark`, `.marker`, `.page`, or `.trail` wires it into the system automatically
+* A context-driven tool where adding a `.bookmark` to any `.page` wires it into the system automatically
 
 All you have to do is:
 
