@@ -1,14 +1,14 @@
-# 📖 Bookshelf — A Standard for Structuring Memory
+# 📖 Bookmark — A Standard for Structuring Memory
 
 > MIT Licensed, human-first memory structure for agents, tools, and people.
 
 ---
 
-## ✨ What is Bookshelf?
+## ✨ What is Bookmark?
 
 > \*"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails** to create custom **Marker Agents**."
 
-**Bookshelf** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **books**, **pages**, **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
+**Bookmark** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **books**, **pages**, **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
 
 It is:
 
@@ -21,33 +21,30 @@ It is:
 
 ## 📘 Core Concepts
 
-| Concept       | Folder        | Description                        |
-| ------------- | ------------- | ---------------------------------- |
-| **Bookshelf** | `.bookshelf/` | A collection of unstructured books |
-| **Case**      | `bookcase/`   | A collection of ready-to-use books |
+| Concept      | Folder       | Description                                                    |
+| ------------ | ------------ | -------------------------------------------------------------- |
+| **Bookmark** | `.bookmark/` | Memory environment and root for all knowledge components       |
+| **Bookcase** | `bookcase/`  | A collection of books ready to be used, routed, or interpreted |
 
-| Concept  | File    | Description                                             |
-| -------- | ------- | ------------------------------------------------------- |
-| **MSTP** | `.mstp` | Markdown Storytelling Protocol — system-generated logic |
-| **Book** | `.book` | A single point of truth and knowledge                   |
+| Concept  | File    | Description                                                 |
+| -------- | ------- | ----------------------------------------------------------- |
+| **MSTP** | `.mstp` | Markdown Storytelling Protocol — system-generated logic     |
+| **Book** | `.book` | A collection of pages, marks, markers, ribbons, and trails. |
 
 | Concept    | File/Folder           | Description                                         |
 | ---------- | --------------------- | --------------------------------------------------- |
 | **Page**   | `.page`, `pages/`     | A single context snapshot                           |
 | **Mark**   | `.mark`, `marks/`     | A reusable memory anchor or logic tag               |
 | **Marker** | `.marker`, `markers/` | The tool or method that connects and triggers marks |
-| **Ribbon** | `.ribbon`, `ribbons/` | Starting point of a memory flow                      |
+| **Ribbon** | `.ribbon`, `ribbons/` | Starting point of a memory flow                     |
 | **Trail**  | `.trail`, `trails/`   | System-tracked logs for each marker                 |
-
-> A **book** is a structured set of memory marks.
-> A **bookcase** is a collection of books ready to be used, routed, or interpreted.
 
 ---
 
 ## 📂 File Hierarchy Example
 
 ```
-.bookshelf/
+.bookmark/
 ├── bookcase/
 │   ├── me.book
 │   ├── fed.book
@@ -85,40 +82,40 @@ It is:
 
 ---
 
-## 🧐 Why Bookshelf?
+## 🤔 Why Bookmark?
 
-This is not a `.mark` or `.marker` generator — that’s what **MARK CLI** does.
+This is not a `.mark`, `.book`, or `.page` generator — that’s what **MARK CLI** does.
 
-Instead, Bookshelf is:
+Instead, Bookmark is:
 
-* A Storybook-style interface for linking your **marks** to your **markers** logic
+* A Storybook-style interface for linking your **books**, **pages**, and **marks** to your own **marker** logic
 * A runtime interface for building and following **marker flows**
 * A shared environment where markers trigger agent actions or self-navigation
 * A context-driven tool where adding a `.book`, `.page`, `.mark`, `.marker`, `.ribbon`, or `.trail` wires it into the system automatically
 
-Just write your `.book`, `.page`, `.mark`, `.marker`, `.ribbon`, and `.trail` files — and Bookshelf will do the rest.
+Just write your `.book`, `.page` and `.mark` files — and Bookmark will do the rest.
 
-Note: **Trails** can be added to any `.marker` inside the `.bookshelf/` to trail each marker’s use.
+Note: **Trails** can be added to any `.mark` or `.marker` inside the `.bookmark/` to trail each use.
 
-The system connects your books and pages together, creates a visual Bookshelf interface, and dynamically builds marks, markers, trails, books, pages, ribbons, and MSTP records as you go.
+The system connects your books, pages, and marks together, creates a visual Bookmark interface, and dynamically builds markers, trails, ribbons, and MSTP records as you go.
 
 ---
 
 ## 💪 Usage
 
 ```
-# Open a books interface like Storybook
-bookshelf open <*.book>
+# Open a books interface
+bookmark open <*.book>
 
-# Open a bookcase interface
-bookshelf open bookcase
+# Open all book interfaces
+bookmark open bookcase
 ```
 
 ---
 
 ## 📖 Example Use Cases
 
-* Link `.mark` together to create `.marker` files
+* Link `.mark` files together to create a `.marker` file
 * Add `.ribbon` and `.trail` files to connect workflows and trails
 * Watch your MSTP trail grow automatically as you work
 * Run in dev, test, or production to see memory-based linking and flow in action
@@ -154,7 +151,7 @@ Structured by the BookOS protocols and Storybook-style logic flow
 
 ---
 
-## 💛 Support
+## 💕 Support
 
 If this project helps you or inspires your agent builds:
 [Buy Me a Coffee](https://coff.ee/freightdev)
