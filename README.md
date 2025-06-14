@@ -4,6 +4,23 @@
 
 ---
 
+## ⚠️ Still in Development
+
+These projects are **actively being built**, refined, and soon to be stress-tested in the real world.
+
+* Features may change as I break, test, and rebuild everything from the ground up
+* Some logic is experimental or placeholder until it's solid enough for real deployment
+* Nothing gets released until it’s strong enough to be trusted by the people it’s built for
+
+If you’re reading this, you’re early.
+If you’re using this, you’re part of the build.
+
+> *“I won’t ship anything I wouldn’t use for myself.”* — Jesse
+
+![status](https://img.shields.io/badge/status-in%20development-orange?style=flat-square)
+
+---
+
 ## ✨ What is Bookmark?
 
 > \*"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails** to create custom **Marker Agents**."
