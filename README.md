@@ -18,7 +18,7 @@ It is:
 
 ---
 
-## 🚧 Still in Development • ☕️ Support the Build
+## 🚧 Still in Development
 
 This project is **actively being built**, refined, and soon to be stress-tested in the real world.
 
@@ -35,23 +35,7 @@ If you’re using this, you’re part of the build.
 
 ---
 
-## ☕️ Support the Build
-
-If this repo helps you, consider buying me a coffee:
-👉 [**coff.ee/freightdev**](https://coff.ee/freightdev)
-
-[![Buy Me a Coffee](https://img.shields.io/badge/support-buy%20me%20a%20coffee-yellow?logo=buymeacoffee\&style=flat-square)](https://coff.ee/freightdev)
-
-Every dollar funds tools for the ones still behind the wheel.
-
----
-
 ## 📘 Core Concepts
-
-| Concept   | Folder   | Description                                |
-| --------- | -------- | ------------------------------------------ |
-| **Shelf** | `shelf/` | Mounting Point for any memory group or set |
-| **Case**  | `case/`  | Collection of books, marks, pages, etc.    |
 
 | Concept   | File     | Description                                             |
 | --------- | -------- | ------------------------------------------------------- |
