@@ -6,7 +6,7 @@
 
 ## ✨ What is Bookshelf?
 
-> \*"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails** to create custom **Marker Agents**.
+> \*"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails** to create custom **Marker Agents**."
 
 **Bookshelf** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **books**, **pages**, **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
 
@@ -24,20 +24,23 @@ It is:
 | Concept       | Folder        | Description                        |
 | ------------- | ------------- | ---------------------------------- |
 | **Bookshelf** | `.bookshelf/` | A collection of unstructured books |
-| **Case**      | `bookcase/`   | A collection of ready to use books |
+| **Case**      | `bookcase/`   | A collection of ready-to-use books |
 
 | Concept  | File    | Description                                             |
 | -------- | ------- | ------------------------------------------------------- |
 | **MSTP** | `.mstp` | Markdown Storytelling Protocol — system-generated logic |
 | **Book** | `.book` | A single point of truth and knowledge                   |
 
-| Concept    | File/Folder           | Description                                   |
-| ---------- | --------------------- | --------------------------------------------- |
-| **Page**   | `.page`, `pages/`     | A single context snapshot                     |
-| **Mark**   | `.marker`, `markers/` | Jump point to a reusable logic chunk          |
-| **Marker** | `.mark`, `marks/`     | Identity or memory tied to a function or flow |
-| **Ribbon** | `.ribbon`, `ribbons/` | Starting point of a memory flow               |
-| **Trail**  | `.trail`, `trails/`   | System-tracked logs for each marker           |
+| Concept    | File/Folder           | Description                                         |
+| ---------- | --------------------- | --------------------------------------------------- |
+| **Page**   | `.page`, `pages/`     | A single context snapshot                           |
+| **Mark**   | `.mark`, `marks/`     | A reusable memory anchor or logic tag               |
+| **Marker** | `.marker`, `markers/` | The tool or method that connects and triggers marks |
+| **Ribbon** | `.ribbon`, `ribbons/` | Starting point of a memory flow                      |
+| **Trail**  | `.trail`, `trails/`   | System-tracked logs for each marker                 |
+
+> A **book** is a structured set of memory marks.
+> A **bookcase** is a collection of books ready to be used, routed, or interpreted.
 
 ---
 
@@ -70,7 +73,7 @@ It is:
 │   ├── me.marker
 │   ├── packet-pilot.marker
 │   ├── cargo-connect.marker
-│   └── whisper-witness.mark
+│   └── whisper-witness.marker
 ├── trails/
 │   ├── packet-pilot.trail
 │   ├── cargo-connect.trail
@@ -82,7 +85,7 @@ It is:
 
 ---
 
-## 🧠 Why Bookshelf?
+## 🧐 Why Bookshelf?
 
 This is not a `.mark` or `.marker` generator — that’s what **MARK CLI** does.
 
@@ -91,17 +94,11 @@ Instead, Bookshelf is:
 * A Storybook-style interface for linking your **marks** to your **markers** logic
 * A runtime interface for building and following **marker flows**
 * A shared environment where markers trigger agent actions or self-navigation
-* A context-driven tool where adding a `.book`, `.page`, `.mark`, `.marker`,`.ribbon`, or `.trail` wires it into the system automatically
+* A context-driven tool where adding a `.book`, `.page`, `.mark`, `.marker`, `.ribbon`, or `.trail` wires it into the system automatically
 
-All you have to do is:
+Just write your `.book`, `.page`, `.mark`, `.marker`, `.ribbon`, and `.trail` files — and Bookshelf will do the rest.
 
-* Write `packet-scanner.mark.ts` alongside `packet-packet.ts`
-* Write `packet-pilot.marker.py` alongside `packet-pilot.py`
-* Write `packetView.page.tsx` alongside `packetView.tsx`
-* Write `packet-process.ribbon.py` alongside `packet-process.py`
-* Add `fed.book` — and Bookshelf will render it into your own custom `mark.trail`
-
-Note: **Trails** can be added to any `.marker` inside the `.bookshelf/` to trail each markers use.
+Note: **Trails** can be added to any `.marker` inside the `.bookshelf/` to trail each marker’s use.
 
 The system connects your books and pages together, creates a visual Bookshelf interface, and dynamically builds marks, markers, trails, books, pages, ribbons, and MSTP records as you go.
 
@@ -113,7 +110,7 @@ The system connects your books and pages together, creates a visual Bookshelf in
 # Open a books interface like Storybook
 bookshelf open <*.book>
 
-# Open a bookcase interface like Storybook
+# Open a bookcase interface
 bookshelf open bookcase
 ```
 
@@ -164,4 +161,4 @@ If this project helps you or inspires your agent builds:
 
 Every dollar goes toward tools for the ones still behind the wheel.
 
-☕️ Jesse — [freightdev](https://github.com/freightdev)
+️ Jesse — [freightdev](https://github.com/freightdev)
