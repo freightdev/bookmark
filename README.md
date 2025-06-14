@@ -51,20 +51,21 @@ Every dollar funds tools for the ones still behind the wheel.
 | Concept   | Folder   | Description                                |
 | --------- | -------- | ------------------------------------------ |
 | **Shelf** | `shelf/` | Mounting Point for any memory group or set |
-| **Book**  | `book/`  | Collection of marks, pages, and trails     |
+| **Case**  | `case/`  | Collection of books, marks, pages, etc.    |
 
 | Concept   | File     | Description                                             |
 | --------- | -------- | ------------------------------------------------------- |
-| **MST**  | `.mstp`   | Markdown Storytelling Protocol — system-generated logic |
-| **Trail** | `.trail` | System-tracked path between connected marks and markers |
+| **MSTP**  | `.mstp`  | Markdown Storytelling Protocol — system-generated logic |
 
-| Concept      | File/Folder               | Description                                   |
-| ------------ | ------------------------- | --------------------------------------------- |
-| **Bookmark** | `.bookmark`, `bookmarks/` | Jump point to a mark, marker, or page state   |
-| **Page**     | `.page`, `pages/`         | A single context snapshot                     |
-| **Mark**     | `.mark`, `marks/`         | Identity or memory tied to a function or flow |
-| **Marker**   | `.marker`, `markers/`     | Tool, helper, or reusable logic chunk         |
-| **Ribbon**   | `.ribbon`, `ribbons/`     | Starting point of a memory trail              |
+| Concept      | File/Folder               | Description                                             |
+| ------------ | ------------------------- | ------------------------------------------------------- |
+| **Book**     | `.book`, `books/`         | A single point of truth and knowledge                   |
+| **Bookmark** | `.bookmark`, `bookmarks/` | Jump point to a mark, marker, or page state             |
+| **Page**     | `.page`, `pages/`         | A single context snapshot                               |
+| **Mark**     | `.marker`, `markers/`     | Identity or memory tied to a function or flow            |
+| **Marker**   | `.mark`, `marks/`         | Tool, helper, or reusable logic chunk                   |
+| **Ribbon**   | `.ribbon`, `ribbons/`     | Starting point of a memory flow                          |
+| **Trail**    | `.trail`, `trails/`       | System-tracked logs for each marker                     |
 
 ---
 
@@ -72,22 +73,38 @@ Every dollar funds tools for the ones still behind the wheel.
 
 ```
 ~shelf/
-└── book/
+└── case/
+    ├── books/
+    │   ├── fed.book
+    │   └── elda.book
     ├── ribbons/
     │   ├── packet-process.ribbon
+    │   ├── cargo-setup.ribbon
+    │   └── whisper-call.ribbon
     ├── pages/
     │   ├── process-checker.page
     │   ├── bugfix-notes.page
+    │   └── whisper-notes.page
     ├── bookmarks/
     │   ├── packet-scanner.bookmark
+    │   ├── packet-complete.bookmark
+    │   ├── cargo-collect.bookmark
+    │   └── whisper-collect.bookmark
     ├── marks/
     │   ├── scan.mark
+    │   ├── sign.mark
     │   ├── check.mark
+    │   ├── whisper.mark
     │   └── process.mark
     ├── markers/
     │   ├── packet-pilot.marker
-    ├── book.mstp
-    └── mark.trail
+    │   ├── cargo-connect.marker
+    │   └── whisper-witness.mark
+    ├── trails/
+    │   ├── packet-pilot.trail
+    │   ├── cargo-connect.trail
+    │   └── whisper-witness.trail
+    └── mark.mstp
 ```
 
 ---
