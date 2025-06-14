@@ -6,8 +6,7 @@
 
 ## ✨ What is Bookshelf?
 
-
-> *"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails** to create custom **Marker Agents**.
+> \*"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails** to create custom **Marker Agents**.
 
 **Bookshelf** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **books**, **pages**, **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
 
@@ -22,24 +21,23 @@ It is:
 
 ## 📘 Core Concepts
 
+| Concept       | Folder        | Description                        |
+| ------------- | ------------- | ---------------------------------- |
+| **Bookshelf** | `.bookshelf/` | A collection of unstructured books |
+| **Case**      | `bookcase/`   | A collection of ready to use books |
 
-| Concept       | Folder        | Description                                             |
-| ------------- | ------------- | ------------------------------------------------------- |
-| **Bookshelf** | `.bookshelf/` | A collection of unstructured books                      |
-| **Case**      | `bookcase/`   | A collection of ready to use books                      |
+| Concept  | File    | Description                                             |
+| -------- | ------- | ------------------------------------------------------- |
+| **MSTP** | `.mstp` | Markdown Storytelling Protocol — system-generated logic |
+| **Book** | `.book` | A single point of truth and knowledge                   |
 
-| Concept   | File     | Description                                             |
-| --------- | -------- | ------------------------------------------------------- |
-| **MSTP**  | `.mstp`  | Markdown Storytelling Protocol — system-generated logic |
-| **Book**  | `.book`  | A single point of truth and knowledge                   |
-
-| Concept      | File/Folder               | Description                                             |
-| ------------ | ------------------------- | ------------------------------------------------------- |
-| **Page**     | `.page`, `pages/`         | A single context snapshot                               |
-| **Mark**     | `.marker`, `markers/`     | Jump point to a reusable logic chunk                    |
-| **Marker**   | `.mark`, `marks/`         | Identity or memory tied to a function or flow            |
-| **Ribbon**   | `.ribbon`, `ribbons/`     | Starting point of a memory flow                          |
-| **Trail**    | `.trail`, `trails/`       | System-tracked logs for each marker                     |
+| Concept    | File/Folder           | Description                                   |
+| ---------- | --------------------- | --------------------------------------------- |
+| **Page**   | `.page`, `pages/`     | A single context snapshot                     |
+| **Mark**   | `.marker`, `markers/` | Jump point to a reusable logic chunk          |
+| **Marker** | `.mark`, `marks/`     | Identity or memory tied to a function or flow |
+| **Ribbon** | `.ribbon`, `ribbons/` | Starting point of a memory flow               |
+| **Trail**  | `.trail`, `trails/`   | System-tracked logs for each marker           |
 
 ---
 
@@ -103,13 +101,13 @@ All you have to do is:
 * Write `packet-process.ribbon.py` alongside `packet-process.py`
 * Add `fed.book` — and Bookshelf will render it into your own custom `mark.trail`
 
-Note: **Trails** can be added to any `.marker` inside the `.bookshelf/` to mark what its behavivor and decisions 
+Note: **Trails** can be added to any `.marker` inside the `.bookshelf/` to mark what its behavivor and decisions
 
 The system connects your books and pages together, creates a visual Bookshelf interface, and dynamically builds marks, markers, trails, books, pages, ribbons, and MSTP records as you go.
 
 ---
 
-## 🛠 Usage
+## 💪 Usage
 
 ```
 # Open a books interface like Storybook
@@ -157,8 +155,9 @@ Structured by the MARK OS protocol and Storybook-style logic flow
 ## ✍️ Author
 
 **Jesse Edward Eugene Wayne Conley**
-  - 📬 [jesse.freightdev@gmail.com](mailto:jesse.freightdev@gmail.com)
-  - 🔗 [github.com/freightdev](https://github.com/freightdev)
+
+* 📬 [jesse.freightdev@gmail.com](mailto:jesse.freightdev@gmail.com)
+* 🔗 [github.com/freightdev](https://github.com/freightdev)
 
 > "I didn’t build this to automate the road. I built it so no one gets left behind."
 
@@ -171,4 +170,4 @@ If this project helps you or inspires your agent builds:
 
 Every dollar goes toward tools for the ones still behind the wheel.
 
-️ Jesse — [freightdev](https://github.com/freightdev)
+☕️ Jesse — [freightdev](https://github.com/freightdev)
