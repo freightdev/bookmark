@@ -55,7 +55,7 @@ Every dollar funds tools for the ones still behind the wheel.
 
 | Concept   | File     | Description                                             |
 | --------- | -------- | ------------------------------------------------------- |
-| **MSTP**  | `.mstp`  | MARK Story Telling Protocol — system-generated logic    |
+| **MST**  | `.mstp`   | Markdown Storytelling Protocol — system-generated logic |
 | **Trail** | `.trail` | System-tracked path between connected marks and markers |
 
 | Concept      | File/Folder               | Description                                   |
@@ -74,16 +74,18 @@ Every dollar funds tools for the ones still behind the wheel.
 ~shelf/
 └── book/
     ├── ribbons/
-    │   ├── packet-pilot.ribbon
+    │   ├── packet-process.ribbon
     ├── pages/
-    │   ├── packet-process.page
+    │   ├── process-checker.page
     │   ├── bugfix-notes.page
     ├── bookmarks/
-    │   ├── packet-pilot.bookmark
+    │   ├── packet-scanner.bookmark
     ├── marks/
-    │   └── packet-pilot.mark
+    │   ├── scan.mark
+    │   ├── check.mark
+    │   └── process.mark
     ├── markers/
-    │   ├── packet-scanner.marker
+    │   ├── packet-pilot.marker
     ├── book.mstp
     └── mark.trail
 ```
