@@ -1,13 +1,15 @@
-# 📖 Bookmark — A Standard for Structuring Memory
+# 📖 Marker Ink — A Standard for Structuring Memory
 
-> *"The system will write a bookmark — to help you connect your marks and markers."*
 > MIT Licensed, human-first memory structure for agents, tools, and people.
 
 ---
 
-## ✨ What is Bookmark?
+## ✨ What is Bookcase?
 
-**Bookmark** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
+
+> *"The system helps you connect your **books**, **pages**, **marks**, **ribbons**, and **trails***
+
+**Marker Ink** is a memory-first, Markdown-native standard for organizing thought, action, and intent. It reimagines the traditional file system as a living, breathing **storybook-style environment** — made of **books**, **pages**, **marks**, **markers**, **ribbons**, and **trails** — where every interaction helps the system construct a memory-aware interface.
 
 It is:
 
@@ -18,24 +20,12 @@ It is:
 
 ---
 
-## 🚧 Still in Development
-
-This project is **actively being built**, refined, and soon to be stress-tested in the real world.
-
-* Features may change as I break, test, and rebuild everything from the ground up
-* Some logic is experimental or placeholder until it's solid enough for real deployment
-* Nothing gets released until it’s strong enough to be trusted by the people it’s built for
-
-If you’re reading this, you’re early.
-If you’re using this, you’re part of the build.
-
-> *“I won’t ship anything I wouldn’t use on the road myself.”* — Jesse
-
-![status](https://img.shields.io/badge/status-in%20development-orange?style=flat-square)
-
----
-
 ## 📘 Core Concepts
+
+
+| Concept      | File         | Description                                             |
+| ------------ | ------------ | ------------------------------------------------------- |
+| **Bookcase** | `.bookcase/` | A collection of books                                   |
 
 | Concept   | File     | Description                                             |
 | --------- | -------- | ------------------------------------------------------- |
@@ -44,10 +34,9 @@ If you’re using this, you’re part of the build.
 | Concept      | File/Folder               | Description                                             |
 | ------------ | ------------------------- | ------------------------------------------------------- |
 | **Book**     | `.book`, `books/`         | A single point of truth and knowledge                   |
-| **Bookmark** | `.bookmark`, `bookmarks/` | Jump point to a mark, marker, or page state             |
 | **Page**     | `.page`, `pages/`         | A single context snapshot                               |
-| **Mark**     | `.marker`, `markers/`     | Identity or memory tied to a function or flow            |
-| **Marker**   | `.mark`, `marks/`         | Tool, helper, or reusable logic chunk                   |
+| **Mark**     | `.marker`, `markers/`     | Jump point to a reusable logic chunk                    |
+| **Marker**   | `.mark`, `marks/`         | Identity or memory tied to a function or flow            |
 | **Ribbon**   | `.ribbon`, `ribbons/`     | Starting point of a memory flow                          |
 | **Trail**    | `.trail`, `trails/`       | System-tracked logs for each marker                     |
 
@@ -56,7 +45,7 @@ If you’re using this, you’re part of the build.
 ## 📂 File Hierarchy Example
 
 ```
-.book/
+.bookcase/
 ├── books/
 │   ├── me.book
 │   ├── fed.book
@@ -74,11 +63,6 @@ If you’re using this, you’re part of the build.
 │   ├── process-checker.page
 │   ├── bugfix-notes.page
 │   └── whisper-notes.page
-├── bookmarks/
-│   ├── packet-scanner.bookmark
-│   ├── packet-complete.bookmark
-│   ├── cargo-collect.bookmark
-│   └── whisper-collect.bookmark
 ├── ribbons/
 │   ├── packet-process.ribbon
 │   ├── cargo-setup.ribbon
@@ -92,7 +76,6 @@ If you’re using this, you’re part of the build.
 │   ├── packet-pilot.trail
 │   ├── cargo-connect.trail
 │   └── whisper-witness.trail
-├── book.mark
 └── mark.mstp
 ```
 
